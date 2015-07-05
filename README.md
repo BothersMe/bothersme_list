@@ -28,7 +28,7 @@ Or install it yourself as:
 
 At the end of your layout (usually application.hmtl.erb file) before ```</body>``` add
 ```ruby
-  <% issues_list('website', 'MyWebsite.com', 'MyProduct') %>
+  <%= issues_list('website', 'MyWebsite.com', 'MyProduct') %>
 ```
 
 ## Contributing
