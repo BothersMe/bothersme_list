@@ -14,5 +14,8 @@ describe BothersmeList do
     it "should include product" do
       expect(test_instance.issues_list("a", "b", "zzzz")).to include("zzzz")
     end
+    it "should include script tag unencoded" do
+      expect(test_instance.issues_list("a", "b")).to include("</script>")
+    end
   end
 end

@@ -43,3 +43,7 @@ At the end of your layout (usually application.hmtl.erb file) before ```</body>`
 ## CHANGELOG
 
 See [here](CHANGELOG.md).
+
+## Ruby Doc
+
+Is [here](http://www.rubydoc.info/github/BothersMe/bothersme_list/master/BothersmeList)
