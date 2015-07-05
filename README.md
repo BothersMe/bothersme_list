@@ -1,4 +1,4 @@
-# Bothersme List [![Build Status](https://travis-ci.org/BothersMe/bothersme_list.svg?branch=master)](https://travis-ci.org/BothersMe/bothersme_list) [![Code Climate](https://codeclimate.com/github/BothersMe/bothersme_list/badges/gpa.svg)](https://codeclimate.com/github/BothersMe/bothersme_list) [![Coverage Status](https://coveralls.io/repos/BothersMe/bothersme_list/badge.svg)](https://coveralls.io/r/BothersMe/bothersme_list)
+# Bothersme List [![Build Status](https://travis-ci.org/BothersMe/bothersme_list.svg?branch=master)](https://travis-ci.org/BothersMe/bothersme_list) [![Code Climate](https://codeclimate.com/github/BothersMe/bothersme_list/badges/gpa.svg)](https://codeclimate.com/github/BothersMe/bothersme_list) [![Coverage Status](https://coveralls.io/repos/BothersMe/bothersme_list/badge.svg)](https://coveralls.io/r/BothersMe/bothersme_list) [![Dependency Status](https://www.versioneye.com/user/projects/5598d2186166340022000087/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5598d2186166340022000087)
 
  Inserts "Track an Issue" button on a side
 
