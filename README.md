@@ -1,13 +1,7 @@
 # Bothersme List
 [![Build Status](https://travis-ci.org/BothersMe/bothersme_list.svg?branch=master)](https://travis-ci.org/BothersMe/bothersme_list) [![Code Climate](https://codeclimate.com/github/BothersMe/bothersme_list/badges/gpa.svg)](https://codeclimate.com/github/BothersMe/bothersme_list) [![Coverage Status](https://coveralls.io/repos/BothersMe/bothersme_list/badge.svg)](https://coveralls.io/r/BothersMe/bothersme_list) [![Dependency Status](https://www.versioneye.com/user/projects/5598d2186166340022000087/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5598d2186166340022000087) [![Docs](http://b.repl.ca/v1/yard-docs-blue.png)](http://www.rubydoc.info/github/BothersMe/bothersme_list/master/BothersmeList)
 
- Inserts "Track an Issue" button on a side
-
- Parameters:
- 1. type: 'website', 'camera', 'wearable'
- 2. company: 'YourCompanyName'
- 3. product: 'YourProductName' or nil if used for all products
-
+Inserts "Track an Issue" button on a side like a button on [http://bothers.me](http://bothers.me)
 
 ## Installation
 
@@ -27,10 +21,27 @@ Or install it yourself as:
 
 ## Usage
 
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'bothersme_list'
+```
+
 At the end of your layout (usually application.hmtl.erb file) before ```</body>``` add
 ```ruby
   <%= issues_list('website', 'MyWebsite.com', 'MyProduct') %>
 ```
+
+the script will asynchronously add "Track an Issue" button.
+
+### Parameters
+  1. type [String] indicates the type of the product. Supported types are: 'website', 'camera', 'wearable'
+  2. company [String] is your company name camel case like 'MyCompany'
+  3. product [String] name of your product came case like "My Product", you can pass nil to render issues for all products
+  4. side [String] which side to render on, supported 'left', 'right', default: 'right'
+  5. textColor [String] CSS color to render as foreground color. default 'white'
+  6. bgColor [String] CSS color to render as background color, default '#55B055'
+
 
 ## Contributing
 

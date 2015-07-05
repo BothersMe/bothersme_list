@@ -4,18 +4,19 @@ module BothersmeList
   # Inserts "Track an Issue" button on a side
   # @see http://bothers.me as an example
   #
-  # Usage:
+  # @example Usage:
   #
   #    <%= issues_list('website', 'MyWebsite.com', 'MyProduct') %>
   #
   # right before "</body>" to asynchronously add "Track an Issue" button.
   #
-  # @param [String, #read] type indicates the type of the product. Supported types are: 'website', 'camera', 'wearable'
-  # @param [String, #read] company is your company name camel case like 'MyCompany'
-  # @param [optional, String, #read] product name of your product came case like "My Product", you can pass nil to render issues for all products
-  # @param [optional, String, #read] side which side to render on, supported 'left', 'right', default: 'right'
-  # @param [optional, String, #read] textColor CSS color to render as foreground color. default 'white'
-  # @param [optional, String, #read] bgColor CSS color to render as background color, default '#55B055'
+  # @param type [String] indicates the type of the product. Supported types are: 'website', 'camera', 'wearable'
+  # @param company [String] is your company name camel case like 'MyCompany'
+  # @param product [String] name of your product came case like "My Product", you can pass nil to render issues for all products
+  # @param side [String] which side to render on, supported 'left', 'right', default: 'right'
+  # @param textColor [String] CSS color to render as foreground color. default 'white'
+  # @param bgColor [String] CSS color to render as background color, default '#55B055'
+  #
   # @return [String] the HTML safe <script> tag containing code to add the button
   def issues_list(type, company, product=nil, side='right', textColor='white', bgColor='#55B055')
     button_script = %{
