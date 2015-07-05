@@ -1,4 +1,5 @@
-# BothersmeList
+# Bothersme List [![Build Status](https://travis-ci.org/BothersMe/bothersme_list.svg?branch=master)](https://travis-ci.org/BothersMe/bothersme_list)
+
 
  Inserts "Track an Issue" button on a side
 
