@@ -1,5 +1,4 @@
-# Bothersme List [![Build Status](https://travis-ci.org/BothersMe/bothersme_list.svg?branch=master)](https://travis-ci.org/BothersMe/bothersme_list)
-
+# Bothersme List [![Build Status](https://travis-ci.org/BothersMe/bothersme_list.svg?branch=master)](https://travis-ci.org/BothersMe/bothersme_list) [![Code Climate](https://codeclimate.com/github/BothersMe/bothersme_list/badges/gpa.svg)](https://codeclimate.com/github/BothersMe/bothersme_list)
 
  Inserts "Track an Issue" button on a side
 
