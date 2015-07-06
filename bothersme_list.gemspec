@@ -17,4 +17,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
   spec.rubyforge_project = "bothersme_list"
+
+  # For development / Code coverage / Documentation
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'yard'
+  spec.add_development_dependency 'coveralls'
 end
