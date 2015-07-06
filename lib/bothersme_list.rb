@@ -30,7 +30,7 @@ module BothersmeList
                 var script  = d.createElement('script');
                 var parent  = d.getElementsByTagName('script')[0];
                 script.async = 1;
-                script.src   = '//<%= domain_root %>/bm_track_issue/bm_track_issue-v1.js';
+                script.src   = '//bothers.me/bm_track_issue/bm_track_issue-v1.js';
                 script.setAttribute('fn',fn);
                 script.setAttribute('params',JSON.stringify(params));
                 parent.parentNode.insertBefore(script, parent);
