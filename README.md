@@ -1,5 +1,10 @@
 # Bothersme List
-[![Build Status](https://travis-ci.org/BothersMe/bothersme_list.svg?branch=master)](https://travis-ci.org/BothersMe/bothersme_list) [![Code Climate](https://codeclimate.com/github/BothersMe/bothersme_list/badges/gpa.svg)](https://codeclimate.com/github/BothersMe/bothersme_list) [![Coverage Status](https://coveralls.io/repos/BothersMe/bothersme_list/badge.svg)](https://coveralls.io/r/BothersMe/bothersme_list) [![Dependency Status](https://www.versioneye.com/user/projects/5598d2186166340022000087/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5598d2186166340022000087) [![Docs](http://b.repl.ca/v1/yard-docs-blue.png)](http://www.rubydoc.info/github/BothersMe/bothersme_list/master/BothersmeList)
+[![Build Status](https://travis-ci.org/BothersMe/bothersme_list.svg?branch=master)](https://travis-ci.org/BothersMe/bothersme_list)
+[![Code Climate](https://codeclimate.com/github/BothersMe/bothersme_list/badges/gpa.svg)](https://codeclimate.com/github/BothersMe/bothersme_list)
+[![Coverage Status](https://coveralls.io/repos/BothersMe/bothersme_list/badge.svg)](https://coveralls.io/r/BothersMe/bothersme_list)
+[![Dependency Status](https://www.versioneye.com/user/projects/5598d2186166340022000087/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5598d2186166340022000087)
+[![Online docs](https://img.shields.io/badge/docs-✓-green.svg)](http://www.rubydoc.info/github/BothersMe/bothersme_list/master/BothersmeList)
+[![Gem Version](https://img.shields.io/gem/v/bothersme_list.png)](https://rubygems.org/gems/bothersme_list)
 
 Inserts "Track an Issue" button on a side like a button on [http://bothers.me](http://bothers.me)
 
