@@ -1,6 +1,11 @@
 require "bothersme_list/version"
 
 module BothersmeList
+  BASE_DOMAIN = 'bothers.me'
+  ENV_PREFIX = { 'development'=>'dev.', 'test'=>'dev.', 'staging'=>'test.', 'production'=>'' }
+  DEFAULT_ENV_PREFIX = 'test.'
+  DEFAULT_NO_ENV_PREFIX = 'dev.'
+
   # Inserts "Track an Issue" button on a side
   # @see http://bothers.me as an example
   #
@@ -19,6 +24,8 @@ module BothersmeList
   #
   # @return [String] the HTML safe <script> tag containing code to add the button
   def issues_list(type, company, product=nil, side='right', textColor='white', bgColor='#55B055')
+    server = detect_bothers_server_name()
+
     button_script = %{
       <!-- Bothers.Me button -->
       <script>
@@ -30,7 +37,7 @@ module BothersmeList
                 var script  = d.createElement('script');
                 var parent  = d.getElementsByTagName('script')[0];
                 script.async = 1;
-                script.src   = '//bothers.me/bm_track_issue/bm_track_issue-v1.js';
+                script.src   = '//#{server}/bm_track_issue/bm_track_issue-v1.js';
                 script.setAttribute('fn',fn);
                 script.setAttribute('params',JSON.stringify(params));
                 parent.parentNode.insertBefore(script, parent);
@@ -44,9 +51,22 @@ module BothersmeList
                             'user': '' }});
       </script>
     }
-    button_script = button_script.html_safe if defined?(Rails)
+    button_script = button_script.html_safe if button_script.respond_to?(:html_safe)
     return button_script
+  end
+
+  def detect_bothers_server_name
+    server = BASE_DOMAIN
+    prefix = DEFAULT_NO_ENV_PREFIX
+    if defined?(Rails)
+      rails_env = Rails.env.to_s
+      prefix = DEFAULT_ENV_PREFIX
+      if ENV_PREFIX.has_key?(rails_env)
+        prefix = ENV_PREFIX[rails_env]
+      end
+    end
+    return prefix + server
   end
 end
 
-ActionView::Base.send :include, BothersmeList if defined?(Rails)
+ActionView::Base.send :include, BothersmeList if defined?(ActionView)

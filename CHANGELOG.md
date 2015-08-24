@@ -12,3 +12,8 @@
 
 * Updated documentation
 * Fixed issue with domain name in embedded button
+
+## v1.0.0
+
+* Added support for multiple environments
+* Much more comprehensive test coverage
