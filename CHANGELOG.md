@@ -17,3 +17,7 @@
 
 * Added support for multiple environments
 * Much more comprehensive test coverage
+
+## v1.0.1
+
+* Minor version update
